@@ -1,33 +1,74 @@
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import BookingWidget from '../components/BookingWidget';
 import CabinCard from '../components/CabinCard';
 import { cabins } from '../data/cabins';
-import { Leaf, Heart, Mountain, Sparkles } from 'lucide-react';
+import { Leaf, Heart, Mountain, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
+
+// Real hero images scraped directly from visitbrokenbowcabins.com
+const HERO_IMAGES = [
+  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/DJI_0023-2.jpeg', alt: 'Aerial view of Rio Vista cabin' },
+  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/D8FD713A-2DA5-407F-96D3-D619A08F3AE2-scaled.jpeg', alt: 'Last Wild River Resort' },
+  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Wine-Glasses-Fav-scaled.jpeg', alt: 'Romantic cabin getaway' },
+  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Swing-Bed-Closeup-scaled.jpeg', alt: 'Cabin swing bed' },
+  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2024/10/DSC_7869-scaled.jpg', alt: 'The Perfect Blend cabin' },
+  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/RV-Fire-Pit-2-scaled-1.jpeg', alt: 'Fire pit evening' },
+  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/09/DSC_4355-scaled.jpg', alt: 'Cabin exterior' },
+];
 
 export default function Home() {
+  const [slide, setSlide] = useState(0);
+  const [direction, setDirection] = useState(1);
+
+  useEffect(() => {
+    const t = setInterval(() => {
+      setDirection(1);
+      setSlide((s) => (s + 1) % HERO_IMAGES.length);
+    }, 5000);
+    return () => clearInterval(t);
+  }, []);
+
+  const goTo = (idx: number) => {
+    setDirection(idx > slide ? 1 : -1);
+    setSlide(idx);
+  };
+
+  const prev = () => { setDirection(-1); setSlide((s) => (s - 1 + HERO_IMAGES.length) % HERO_IMAGES.length); };
+  const next = () => { setDirection(1);  setSlide((s) => (s + 1) % HERO_IMAGES.length); };
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Overlay */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest/40 to-forest/40" />
-        
-        {/* Hero Background */}
-        <motion.div 
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
-          className="absolute inset-0 z-0"
-        >
-          <img 
-            src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/DJI_0023-2.jpeg" 
-            alt="Bear Mountain Lodging aerial view" 
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-        </motion.div>
+        {/* Overlay */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-forest/50 via-forest/20 to-forest/50 pointer-events-none" />
 
+        {/* Crossfade Slideshow */}
+        <div className="absolute inset-0 z-0">
+          <AnimatePresence initial={false}>
+            <motion.div
+              key={slide}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2, ease: 'easeInOut' }}
+              className="absolute inset-0"
+            >
+              <motion.img
+                src={HERO_IMAGES[slide].src}
+                alt={HERO_IMAGES[slide].alt}
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+                initial={{ scale: 1.08 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 6, ease: 'linear' }}
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        {/* Hero Text */}
         <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto space-y-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -38,24 +79,49 @@ export default function Home() {
               Escape to the Wild
             </h1>
             <p className="text-white/80 font-medium uppercase tracking-[0.4em] text-[10px] md:text-xs">
-              Luxury Cabin Rentals in Broken Bow
+              Luxury Cabin Rentals in Broken Bow, Oklahoma
             </p>
           </motion.div>
-
-          {/* Booking Widget */}
           <div className="pt-12">
             <BookingWidget />
           </div>
         </div>
 
+        {/* Prev / Next arrows */}
+        <button
+          onClick={prev}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-black/20 hover:bg-gold/80 backdrop-blur-sm rounded-full text-white transition-all duration-300"
+          aria-label="Previous slide"
+        >
+          <ChevronLeft size={22} />
+        </button>
+        <button
+          onClick={next}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-3 bg-black/20 hover:bg-gold/80 backdrop-blur-sm rounded-full text-white transition-all duration-300"
+          aria-label="Next slide"
+        >
+          <ChevronRight size={22} />
+        </button>
+
+        {/* Dot navigation */}
+        <div className="absolute bottom-20 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2">
+          {HERO_IMAGES.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={`rounded-full transition-all duration-300 ${i === slide ? 'bg-gold w-6 h-2' : 'bg-white/50 w-2 h-2 hover:bg-white'}`}
+            />
+          ))}
+        </div>
+
         {/* Scroll Indicator */}
-        <motion.div 
+        <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-white/60 flex flex-col items-center"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-white/60 flex flex-col items-center"
         >
-          <span className="text-[10px] uppercase tracking-widest font-bold mb-2">Explore More</span>
-          <div className="w-[1px] h-12 bg-gold/50" />
+          <div className="w-[1px] h-10 bg-gold/50" />
         </motion.div>
       </section>
 

@@ -16,7 +16,7 @@ const CabinCard: React.FC<CabinCardProps> = ({ cabin }) => {
       viewport={{ once: true }}
       className="bg-white rounded-lg overflow-hidden card-shadow group"
     >
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-64 overflow-hidden">
         <motion.img
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.6 }}
@@ -24,6 +24,8 @@ const CabinCard: React.FC<CabinCardProps> = ({ cabin }) => {
           alt={cabin.name}
           className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
+          decoding="async"
+          loading="lazy"
         />
         <div className="absolute top-3 right-3">
           <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-[9px] font-bold uppercase tracking-widest text-espresso border border-black/5">
