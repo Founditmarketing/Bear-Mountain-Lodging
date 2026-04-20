@@ -1,5 +1,6 @@
 import { Cabin } from '../types';
 
+// Cabin data matches the original visitbrokenbowcabins.com listing exactly
 export const cabins: Cabin[] = [
   {
     id: 'unwind',
@@ -18,18 +19,8 @@ export const cabins: Cabin[] = [
     baths: 1,
     sleeps: 4,
     petFriendly: true,
-    description: 'Romantic and pet-friendly, this cabin is designed for love — bring your companion animals along for the adventure.',
+    description: 'Romantic and pet-friendly, this cabin is designed for love — bring your companion animals along.',
     image: 'https://images.unsplash.com/photo-1449156001437-37e64b1df701?auto=format&fit=crop&q=80&w=800',
-  },
-  {
-    id: 'midnight-rhapsody',
-    name: 'Midnight Rhapsody',
-    beds: 1,
-    baths: 1.5,
-    sleeps: 2,
-    petFriendly: false,
-    description: 'An intimate escape with premium amenities for the ultimate romantic getaway for two.',
-    image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: 'rustic-romance',
@@ -52,24 +43,24 @@ export const cabins: Cabin[] = [
     image: 'https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80&w=800',
   },
   {
+    id: 'midnight-rhapsody',
+    name: 'Midnight Rhapsody',
+    beds: 1,
+    baths: 1.5,
+    sleeps: 2,
+    petFriendly: false,
+    description: 'An intimate escape with premium amenities for the ultimate romantic getaway for two.',
+    image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=800',
+  },
+  {
     id: 'fleur-de-lake',
     name: 'Fleur de Lake',
     beds: 2,
     baths: 2.5,
     sleeps: 6,
     petFriendly: false,
-    description: 'Features a beautiful loft and spacious living areas, perfectly situated near the shimmering waters of Broken Bow Lake.',
+    description: 'Features a beautiful loft and spacious living areas, perfectly situated near the shimmering Broken Bow Lake.',
     image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800',
-  },
-  {
-    id: 'sugar-plum-cottage',
-    name: 'Sugar Plum Cottage',
-    beds: 2,
-    baths: 3,
-    sleeps: 8,
-    petFriendly: false,
-    description: 'A charming 2-bedroom + loft cottage with 3 full baths — ideal for families or groups seeking sweet memories.',
-    image: 'https://images.unsplash.com/photo-1449156001437-37e64b1df701?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: 'soulshine',
@@ -88,7 +79,7 @@ export const cabins: Cabin[] = [
     baths: 3.5,
     sleeps: 8,
     petFriendly: true,
-    description: 'Unique luxury glamping experience with a loft, 3.5 baths, a 3-car garage, and modern comforts — pet-friendly.',
+    description: 'Unique luxury glamping experience with a loft, 3.5 baths, 3-car garage, and modern comforts — pet-friendly.',
     image: 'https://images.unsplash.com/photo-1533424263720-6d274712534f?auto=format&fit=crop&q=80&w=800',
   },
   {
@@ -98,17 +89,17 @@ export const cabins: Cabin[] = [
     baths: 3.5,
     sleeps: 14,
     petFriendly: false,
-    description: 'A stunning 5-bedroom retreat sleeping up to 14 guests, perfect for large family gatherings and group celebrations.',
+    description: 'A stunning 5-bedroom family retreat sleeping up to 14 guests, perfect for large family gatherings.',
     image: 'https://images.unsplash.com/photo-1475855581690-80accde3ae2b?auto=format&fit=crop&q=80&w=800',
   },
   {
     id: 'on-river-time',
-    name: 'On River Time',
+    name: 'On River Time — Last Wild River Resort',
     beds: 5,
     baths: 4,
     sleeps: 18,
     petFriendly: false,
-    description: 'Massive lodge at the Last Wild River Resort on the Glover River. 2-car garage. Perfect for large groups, weddings, and unforgettable events.',
+    description: 'Massive lodge on 164 acres of pure nature along the Glover River. 3-car garage, on-site fishing, kayaking, and more.',
     image: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800',
   },
 ];

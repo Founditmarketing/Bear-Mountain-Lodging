@@ -198,6 +198,70 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <section className="py-24 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 space-y-3">
+            <span className="text-gold uppercase tracking-[0.2em] text-xs font-bold">Guest Reviews</span>
+            <h2 className="text-4xl font-serif italic font-bold text-espresso">What Our Guests Say</h2>
+            <div className="flex items-center justify-center gap-1 pt-1">
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} className="w-5 h-5 text-gold fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              ))}
+              <span className="ml-2 text-sm font-bold text-espresso/60">264+ Google Reviews · 98% Recommend</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Lynda Bauer',
+                cabin: 'Fleur De Lake',
+                review: 'Stayed at Fleur De Lake with family and loved the experience. The house was just what we wanted with wonderful amenities and added charm for the holidays! Would like to return with friends and explore more of the scenery during the spring or summer.',
+              },
+              {
+                name: 'Lenzy Cornatzer',
+                cabin: 'Last Wild River Resort',
+                review: 'My family and I (16 of us) stayed at the Last Wild River resort. Let me just say that this is an incredible property. We stayed over Thanksgiving and enjoyed everything this property had to offer. Fishing, hiking, kayaking, and the fire pit. You can book this place with confidence.',
+              },
+              {
+                name: 'Meghan Davis',
+                cabin: 'The Perfect Blend',
+                review: 'The Perfect Blend cabin was amazing! It had every amenity you would need. The jacuzzi was an added benefit and we loved the deck lounge. We would definitely stay there again.',
+              },
+              {
+                name: 'Robert',
+                cabin: 'Honeymoon Stay',
+                review: 'My wife and I spent our honeymoon/one year anniversary here. We couldn\'t be more pleased with how amazing it was. We will be coming back without a doubt.',
+              },
+              {
+                name: 'James',
+                cabin: 'Honey Bear Cabin',
+                review: 'Great cabin. Nearby to a market, but secluded enough to get away. Great get-away for my wife and myself.',
+              },
+              {
+                name: 'Veronica',
+                cabin: 'Guest Review',
+                review: 'We had the most amazing time at Bear Mountain Lodging. The cabin was immaculately clean, beautifully decorated, and had everything we needed. The owners are so responsive and helpful. Can\'t wait to come back!',
+              },
+            ].map((t) => (
+              <div key={t.name} className="bg-white rounded-3xl p-8 shadow-soft space-y-4">
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-gold fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                  ))}
+                </div>
+                <p className="text-espresso/70 leading-relaxed italic text-sm">"{t.review}"</p>
+                <div className="pt-2 border-t border-gold/10">
+                  <p className="font-bold text-espresso">{t.name}</p>
+                  <p className="text-[10px] text-gold uppercase tracking-widest font-bold">{t.cabin}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
