@@ -18,14 +18,16 @@ export default function About() {
               </h1>
             </div>
             <p className="text-espresso/70 text-lg leading-relaxed">
-              Founded over a decade ago, Bear Mountain Lodging was born from a dream to share 
-              the untamed beauty of Broken Bow, Oklahoma, with those seeking a more refined 
-              connection to nature. 
+              Bear Mountain Lodging is an owner-operated cabin rental company offering luxury 
+              honeymoon and family cabins near Broken Bow Lake. Born from a passion for sharing 
+              the untamed beauty of southeast Oklahoma, we've grown from a single cabin into 
+              one of the most trusted names in the region.
             </p>
             <p className="text-espresso/70 text-lg leading-relaxed">
-              We started with a single cabin and a commitment to unparalleled hospitality. 
-              Today, we manage a collection of the most prestigious properties in the region, 
-              including the legendary Last Wild River Resort on the Glover River.
+              From intimate romantic escapes to massive group retreats at our legendary 
+              Last Wild River Resort on the Glover River, every property in our collection 
+              is personally managed and immaculately maintained — because this is our home, 
+              and we want it to feel like yours.
             </p>
             <div className="grid grid-cols-3 gap-8 pt-8">
               <div className="text-center">
@@ -33,12 +35,12 @@ export default function About() {
                 <p className="text-[10px] uppercase font-bold text-gold tracking-widest mt-1">Years</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-serif font-bold text-espresso">5000+</p>
-                <p className="text-[10px] uppercase font-bold text-gold tracking-widest mt-1">Guests</p>
+                <p className="text-4xl font-serif font-bold text-espresso">264+</p>
+                <p className="text-[10px] uppercase font-bold text-gold tracking-widest mt-1">Reviews</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-serif font-bold text-espresso">4.9/5</p>
-                <p className="text-[10px] uppercase font-bold text-gold tracking-widest mt-1">Rating</p>
+                <p className="text-4xl font-serif font-bold text-espresso">98%</p>
+                <p className="text-[10px] uppercase font-bold text-gold tracking-widest mt-1">Recommend</p>
               </div>
             </div>
           </motion.div>

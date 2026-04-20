@@ -11,9 +11,9 @@ export default function Footer() {
           {/* Column 1 */}
           <div className="space-y-4">
             <h4 className="text-[10px] uppercase tracking-widest font-bold text-white mb-6">The Mountain Retreat</h4>
-            <p className="font-serif italic text-xl text-white">12 years of creating memories.</p>
+            <p className="font-serif italic text-xl text-white">Owner-operated. Luxury cabins. Broken Bow, OK.</p>
             <p className="text-cream/40 text-xs mt-4 italic font-medium">
-              Experience the breathtaking landscape of southeast Oklahoma in our luxury cabins. 
+              Honeymoon escapes, family retreats, and group adventures — all just minutes from Broken Bow Lake and Beavers Bend State Park.
             </p>
             <p className="text-cream/20 text-[10px] mt-6">© {currentYear} Bear Mountain Lodging</p>
           </div>
