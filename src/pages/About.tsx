@@ -55,8 +55,8 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-[60px] overflow-hidden shadow-2xl skew-y-2">
               <img
-                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200"
-                alt="Bear Mountain Lodging Cabins"
+                src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/DJI_0024-2048x1364-2.jpeg"
+                alt="Bear Mountain Lodging from above"
                 className="w-full h-full object-cover -skew-y-2 scale-110"
                 referrerPolicy="no-referrer"
               />

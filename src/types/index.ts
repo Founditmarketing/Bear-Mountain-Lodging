@@ -7,6 +7,7 @@ export interface Cabin {
   petFriendly: boolean;
   description: string;
   image: string;
+  images?: string[];
   price?: number;
   features?: string[];
 }

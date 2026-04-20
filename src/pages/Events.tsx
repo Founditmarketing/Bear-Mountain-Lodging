@@ -4,10 +4,10 @@ import { Calendar as CalendarIcon, Heart, Music, Wine, Camera } from 'lucide-rea
 
 export default function Events() {
   const experiences = [
-    { title: 'Weddings', icon: Heart, desc: 'Breathtaking riverside ceremonies and elegant forest receptions.', image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=600' },
-    { title: 'Corporate Retreats', icon: Music, desc: 'The perfect environment for team building and focused strategy.', image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600' },
-    { title: 'Celebrations', icon: Wine, desc: 'Birthdays, anniversaries, and reunions that will be talked about for years.', image: 'https://images.unsplash.com/photo-1530103043960-ef38714abb15?auto=format&fit=crop&q=80&w=600' },
-    { title: 'Photography', icon: Camera, desc: 'Endless natural backdrops for the perfect professional session.', image: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=600' },
+    { title: 'Weddings', icon: Heart, desc: 'Breathtaking riverside ceremonies and elegant forest receptions at the Last Wild River Resort event venue.', image: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/D8FD713A-2DA5-407F-96D3-D619A08F3AE2-scaled.jpeg' },
+    { title: 'Corporate Retreats', icon: Music, desc: 'The perfect environment for team building, strategy sessions, and executive off-sites — surrounded by nature.', image: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/DSC_7835-scaled.jpeg' },
+    { title: 'Celebrations', icon: Wine, desc: 'Birthdays, anniversaries, and family reunions at our large group cabins sleeping up to 18 guests.', image: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/RV-Fire-Pit-2-scaled-1.jpeg' },
+    { title: 'Photography Sessions', icon: Camera, desc: 'Endless natural backdrops — forest, river, lakefront, and luxury cabin interiors for the perfect session.', image: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/DJI_0023-2.jpeg' },
   ];
 
   return (

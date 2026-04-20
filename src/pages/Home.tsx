@@ -21,8 +21,8 @@ export default function Home() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&q=80&w=1920" 
-            alt="Luxury Cabin" 
+            src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/DJI_0023-2.jpeg" 
+            alt="Bear Mountain Lodging aerial view" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -110,8 +110,8 @@ export default function Home() {
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Cozy Interior" 
+                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Wine-Glasses-Fav-scaled.jpeg" 
+                  alt="Cabin luxury amenities" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -153,26 +153,26 @@ export default function Home() {
             <div className="flex-1 order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1588694423247-ca06e3089d02?auto=format&fit=crop&q=80&w=600" 
-                  alt="Family activities" 
+                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/RV-Fire-Pit-2-scaled-1.jpeg" 
+                  alt="Fire pit at cabin" 
                   className="rounded-2xl h-48 w-full object-cover shadow-lg"
                   referrerPolicy="no-referrer"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1601927331269-f20cf9552e6d?auto=format&fit=crop&q=80&w=600" 
-                  alt="Lake view" 
+                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/D8FD713A-2DA5-407F-96D3-D619A08F3AE2-scaled.jpeg" 
+                  alt="Last Wild River Resort" 
                   className="rounded-2xl h-64 w-full object-cover shadow-lg -mt-8"
                   referrerPolicy="no-referrer"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1533424263720-6d274712534f?auto=format&fit=crop&q=80&w=600" 
-                  alt="Cabin evening" 
+                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Swing-Bed-Closeup-scaled.jpeg" 
+                  alt="Cabin swing bed" 
                   className="rounded-2xl h-64 w-full object-cover shadow-lg -mt-16"
                   referrerPolicy="no-referrer"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=600" 
-                  alt="Forest trail" 
+                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/dsc_5648.jpeg" 
+                  alt="Cabin exterior" 
                   className="rounded-2xl h-48 w-full object-cover shadow-lg -mt-24"
                   referrerPolicy="no-referrer"
                 />
