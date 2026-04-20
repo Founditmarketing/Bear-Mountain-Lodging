@@ -8,13 +8,13 @@ import { Leaf, Heart, Mountain, Sparkles, ChevronLeft, ChevronRight } from 'luci
 
 // Real hero images scraped directly from visitbrokenbowcabins.com
 const HERO_IMAGES = [
-  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/DJI_0023-2.jpeg', alt: 'Aerial view of Rio Vista cabin' },
-  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/D8FD713A-2DA5-407F-96D3-D619A08F3AE2-scaled.jpeg', alt: 'Last Wild River Resort' },
-  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Wine-Glasses-Fav-scaled.jpeg', alt: 'Romantic cabin getaway' },
-  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Swing-Bed-Closeup-scaled.jpeg', alt: 'Cabin swing bed' },
-  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2024/10/DSC_7869-scaled.jpg', alt: 'The Perfect Blend cabin' },
-  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/RV-Fire-Pit-2-scaled-1.jpeg', alt: 'Fire pit evening' },
-  { src: 'https://visitbrokenbowcabins.com/wp-content/uploads/2022/09/DSC_4355-scaled.jpg', alt: 'Cabin exterior' },
+  { src: '/images/hero/hero1.jpeg', alt: 'Aerial view of Rio Vista cabin' },
+  { src: '/images/hero/hero2.jpeg', alt: 'Last Wild River Resort' },
+  { src: '/images/hero/hero3.jpeg', alt: 'Romantic cabin getaway' },
+  { src: '/images/hero/hero4.jpeg', alt: 'Cabin swing bed' },
+  { src: '/images/hero/hero5.jpg',  alt: 'The Perfect Blend cabin' },
+  { src: '/images/hero/hero6.jpeg', alt: 'Fire pit evening' },
+  { src: '/images/hero/hero7.jpg',  alt: 'Cabin exterior' },
 ];
 
 export default function Home() {
@@ -176,10 +176,9 @@ export default function Home() {
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Wine-Glasses-Fav-scaled.jpeg" 
+                  src="/images/home/wine-glasses.jpeg" 
                   alt="Cabin luxury amenities" 
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-forest rounded-full -z-10 blur-3xl opacity-10" />
@@ -219,28 +218,24 @@ export default function Home() {
             <div className="flex-1 order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/RV-Fire-Pit-2-scaled-1.jpeg" 
+                  src="/images/home/fire-pit.jpeg" 
                   alt="Fire pit at cabin" 
                   className="rounded-2xl h-48 w-full object-cover shadow-lg"
-                  referrerPolicy="no-referrer"
                 />
                 <img 
-                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/D8FD713A-2DA5-407F-96D3-D619A08F3AE2-scaled.jpeg" 
+                  src="/images/cabins/on-river-time.jpeg" 
                   alt="Last Wild River Resort" 
                   className="rounded-2xl h-64 w-full object-cover shadow-lg -mt-8"
-                  referrerPolicy="no-referrer"
                 />
                 <img 
-                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/Swing-Bed-Closeup-scaled.jpeg" 
+                  src="/images/home/swing-bed.jpeg" 
                   alt="Cabin swing bed" 
                   className="rounded-2xl h-64 w-full object-cover shadow-lg -mt-16"
-                  referrerPolicy="no-referrer"
                 />
                 <img 
-                  src="https://visitbrokenbowcabins.com/wp-content/uploads/2022/04/dsc_5648.jpeg" 
+                  src="/images/home/cabin-exterior.jpeg" 
                   alt="Cabin exterior" 
                   className="rounded-2xl h-48 w-full object-cover shadow-lg -mt-24"
-                  referrerPolicy="no-referrer"
                 />
               </div>
             </div>

@@ -1,7 +1,5 @@
 import { Cabin } from '../types';
 
-const BASE = 'https://visitbrokenbowcabins.com/wp-content/uploads';
-
 export const cabins: Cabin[] = [
   {
     id: 'unwind',
@@ -11,7 +9,7 @@ export const cabins: Cabin[] = [
     sleeps: 4,
     petFriendly: false,
     description: 'A cozy sanctuary perfect for couples or small families looking to reconnect in the heart of nature. Features a hot tub, fire pit, and fully equipped kitchen.',
-    image: `${BASE}/2022/04/DSC_0591-2.jpeg`,
+    image: '/images/cabins/unwind.jpeg',
   },
   {
     id: 'xs-and-os',
@@ -21,14 +19,7 @@ export const cabins: Cabin[] = [
     sleeps: 4,
     petFriendly: true,
     description: 'Romantic and pet-friendly, this cabin features a stunning jetted tub and king bed. Bring your furry companions along for the adventure.',
-    image: `${BASE}/2023/03/Xs-Os-Bed-3-scaled.jpg`,
-    images: [
-      `${BASE}/2023/03/Xs-Os-Bed-3-scaled.jpg`,
-      `${BASE}/2023/03/Xs-Os-Tub-2-3.jpg`,
-      `${BASE}/2023/01/xsandos.jpg`,
-      `${BASE}/2023/01/DJI_0013-scaled.jpg`,
-      `${BASE}/2024/10/DSC_0159-scaled.jpg`,
-    ],
+    image: '/images/cabins/xs-and-os.jpg',
   },
   {
     id: 'midnight-rhapsody',
@@ -38,11 +29,7 @@ export const cabins: Cabin[] = [
     sleeps: 2,
     petFriendly: false,
     description: 'An intimate escape with premium amenities and breathtaking views. Designed for the ultimate romantic getaway for two.',
-    image: `${BASE}/2025/10/55-web-or-mls-DSC_8330-1-2-1.jpg`,
-    images: [
-      `${BASE}/2025/10/55-web-or-mls-DSC_8330-1-2-1.jpg`,
-      `${BASE}/2022/04/dji_0483.jpeg`,
-    ],
+    image: '/images/cabins/midnight-rhapsody.jpg',
   },
   {
     id: 'rustic-romance',
@@ -52,12 +39,7 @@ export const cabins: Cabin[] = [
     sleeps: 2,
     petFriendly: false,
     description: 'The perfect blend of rustic charm and modern comfort. A secluded retreat designed for couples to reconnect.',
-    image: `${BASE}/2024/10/RR-1.jpeg`,
-    images: [
-      `${BASE}/2024/10/RR-1.jpeg`,
-      `${BASE}/2022/04/Exterior-Drive-scaled-1.jpg`,
-      `${BASE}/2023/07/DSC_2937-scaled.jpg`,
-    ],
+    image: '/images/cabins/rustic-romance.jpeg',
   },
   {
     id: 'the-perfect-blend',
@@ -67,12 +49,7 @@ export const cabins: Cabin[] = [
     sleeps: 6,
     petFriendly: false,
     description: 'A spacious 2-bedroom with loft featuring a jacuzzi, stunning deck lounge, and all the amenities your family needs.',
-    image: `${BASE}/2024/10/DSC_7869-scaled.jpg`,
-    images: [
-      `${BASE}/2024/10/DSC_7869-scaled.jpg`,
-      `${BASE}/2022/04/208FE0B0-3679-47EB-8098-C25EBBAD5A86-scaled-1.jpeg`,
-      `${BASE}/2024/10/F7A0415.jpg`,
-    ],
+    image: '/images/cabins/the-perfect-blend.jpg',
   },
   {
     id: 'fleur-de-lake',
@@ -82,12 +59,7 @@ export const cabins: Cabin[] = [
     sleeps: 10,
     petFriendly: false,
     description: 'A stunning 3-bedroom retreat perfectly situated near Broken Bow Lake. Spacious, elegant, and packed with premium amenities for the whole family.',
-    image: `${BASE}/2024/08/F7A0415-1.jpg`,
-    images: [
-      `${BASE}/2024/08/F7A0415-1.jpg`,
-      `${BASE}/2022/08/Fleur-de-Lake.jpg`,
-      `${BASE}/2024/10/DJI_20240822113659_0232_D-e1729000349792.jpg`,
-    ],
+    image: '/images/cabins/fleur-de-lake.jpg',
   },
   {
     id: 'soulshine',
@@ -97,11 +69,7 @@ export const cabins: Cabin[] = [
     sleeps: 8,
     petFriendly: true,
     description: 'A light-filled, pet-friendly family retreat with loft, 3-car garage, and stunning outdoor spaces surrounded by the Ouachita forest.',
-    image: `${BASE}/2024/10/DJI_20240822113659_0232_D-e1729000349792.jpg`,
-    images: [
-      `${BASE}/2024/10/DJI_20240822113659_0232_D-e1729000349792.jpg`,
-      `${BASE}/2024/04/Untitled-design-2024-04-05T112152.599.png`,
-    ],
+    image: '/images/cabins/soulshine.jpg',
   },
   {
     id: 'glamping-bomasion',
@@ -111,12 +79,7 @@ export const cabins: Cabin[] = [
     sleeps: 14,
     petFriendly: false,
     description: 'Unique luxury glamping experience with 5 bedrooms, 3.5 baths — perfect for large family gatherings and group retreats.',
-    image: `${BASE}/2025/12/128-web-or-mls-RTwi1.jpeg`,
-    images: [
-      `${BASE}/2025/12/128-web-or-mls-RTwi1.jpeg`,
-      `${BASE}/2025/04/110-web-or-mls-DSC_4720-1.jpg`,
-      `${BASE}/2025/04/128-web-or-mls-RTwi1.jpeg`,
-    ],
+    image: '/images/cabins/glamping-bomasion.jpeg',
   },
   {
     id: 'rio-vista',
@@ -126,12 +89,7 @@ export const cabins: Cabin[] = [
     sleeps: 18,
     petFriendly: false,
     description: 'A stunning large family retreat with aerial views of the surrounding forest. Perfect for reunions and large group celebrations.',
-    image: `${BASE}/2022/04/DJI_0023-2.jpeg`,
-    images: [
-      `${BASE}/2022/04/DJI_0023-2.jpeg`,
-      `${BASE}/2022/06/Rio-Vista-Image0.jpg`,
-      `${BASE}/2022/04/DSC_2301-scaled-1.jpg`,
-    ],
+    image: '/images/cabins/rio-vista.jpeg',
   },
   {
     id: 'on-river-time',
@@ -141,12 +99,6 @@ export const cabins: Cabin[] = [
     sleeps: 18,
     petFriendly: false,
     description: 'Our crown jewel — 164 acres on the Glover River. Fishing, kayaking, canoeing, volleyball, horseshoes, and more. The ultimate group escape on Oklahoma\'s last free-flowing river.',
-    image: `${BASE}/2022/04/D8FD713A-2DA5-407F-96D3-D619A08F3AE2-scaled.jpeg`,
-    images: [
-      `${BASE}/2022/04/D8FD713A-2DA5-407F-96D3-D619A08F3AE2-scaled.jpeg`,
-      `${BASE}/2022/04/RV-Fire-Pit-2-scaled-1.jpeg`,
-      `${BASE}/2022/04/Swing-Bed-Closeup-scaled.jpeg`,
-      `${BASE}/2022/09/DSC_4355-scaled.jpg`,
-    ],
+    image: '/images/cabins/on-river-time.jpeg',
   },
 ];
